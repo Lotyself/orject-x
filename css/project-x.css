@@ -1,21 +1,46 @@
 body{
     margin: 0;
     padding: 0;
+    overflow: hidden;
+    overflow-y: hidden;
 }
 .header{ /* all hail flexbox*/
-    /*background-color: aqua;*/
+    /* background-color: aqua; */
     display: flex;
     flex-direction: row;
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
+    position: absolute;
     height: 64px;
-    z-index: 3;
+    z-index: 5;
 }
-.menu-button{
-    height: 32px;
+.hamburger{
+    position: relative;
+    display: block;
+    width: 32px;
+    cursor: pointer;
     margin-right: 15px;
+    
+}
+.hamburger .menu-button, .hamburger::after, .hamburger::before{
+    content: '';
+    display: block;
+    height: 4px;
+    margin: 6px 0px;
+    background-color: white;
+    transition: 0.5;
+    width: 32px;
+    transition: 200ms;
+}
+.hamburger.is-active::before{
+    transform: rotate(-45deg) translate(-9px, 5px);
+}
+.hamburger.is-active::after{
+    transform: rotate(45deg) translate(-9px, -5px);
+}
+.hamburger.is-active .menu-button{
+    opacity: 0;
 }
 .logo{
     font-family: "unbounded";

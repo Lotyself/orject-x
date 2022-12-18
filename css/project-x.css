@@ -21,6 +21,7 @@ body{
     width: 32px;
     cursor: pointer;
     margin-right: 15px;
+    z-index: 5;
     
 }
 .hamburger .menu-button, .hamburger::after, .hamburger::before{

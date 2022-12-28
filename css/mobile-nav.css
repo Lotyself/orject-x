@@ -11,9 +11,10 @@
     margin: 10px;
     border-radius: 15px;
     transition: 300ms;
+    opacity: 0;
 }
 .sliding-menu.is-active{
-    
+    opacity: 1;
     right: 0;
 }
 .sliding-menu a {

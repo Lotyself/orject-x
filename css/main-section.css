@@ -71,18 +71,18 @@
     opacity: 1;
     z-index: 1;
     position: absolute;
-    height: 100vh;
+    height: 102vh;
     object-fit: cover;
     width: 100%;
     
 }
-.video video{
+.video img{
     top: 0;
     left: 0;
     opacity: 1;
     z-index: 1;
     position: absolute;
-    height: 100vh;
+    height: 100%;
     object-fit: cover;
     width: 100%;
 }

@@ -5,15 +5,33 @@ window.onload = function(){
     const black = document.querySelector(".blackblackblackeverythingisblack");
     const aboutbutton = document.querySelector(".about");
     const aboutmenu = document.querySelector(".sliding-about-section");
+    const faqbutton = document.querySelector(".faq");
+    const faqmenu = document.querySelector(".sliding-faq-section")
 
     menu_btn.addEventListener("click", function(){
         menu_btn.classList.toggle("is-active");
         mobile_menu.classList.toggle("is-active");
         black.classList.toggle("is-active");
 
+        aboutmenu.classList.remove("is-active");
+        aboutbutton.classList.remove("is-active");
+        faqbutton.classList.remove("is-active");
+        faqmenu.classList.remove("is-active");
+        
+
     })
     aboutbutton.addEventListener("click", function(){
         aboutmenu.classList.toggle("is-active");
-        aboutbutton.classList.toggle("is-active")
+        aboutbutton.classList.toggle("is-active");
+
+        faqbutton.classList.remove("is-active");
+        faqmenu.classList.remove("is-active");
     })
-}
+
+    faqbutton.addEventListener("click", function(){
+        faqbutton.classList.toggle("is-active");
+        faqmenu.classList.toggle("is-active");
+
+        aboutbutton.classList.remove("is-active");
+        aboutmenu.classList.remove("is-active");
+    })}

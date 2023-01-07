@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/mobile-nav.css">
     <link rel="stylesheet" href="css/slidingabout.css">
     <link rel="stylesheet" href="css/slidingfaq.css">
+    <link rel="stylesheet" href="css/slidignmap.css">
 </head>
 <body>
     <!-- header (kutsal bok) -->
@@ -25,8 +26,7 @@
     <nav class="sliding-menu">
         <a class="about" href="#">About</a>
         <a class="faq" href="#">Faq</a>
-        <a class="placeholder" href="#">lorem</a>
-        <a class="placeholder2" href="#">lorem</a>
+        <a class="map" href="#">Location</a>
     </nav>
 
     <!-- section opens when about .is-active -->
@@ -34,9 +34,18 @@
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint excepturi mollitia iusto quisquam, ipsam reiciendis autem et, minus repudiandae optio suscipit nostrum accusamus, tempora repellendus dolorem reprehenderit dicta officia debitis!</p>
     </div>
 
-    <!-- section opens when faq .is-active-->
+    <!-- section opens when faq .is-active -->
     <div class="sliding-faq-section">
         <p>PLACE HOLDER TEXT AMA HOLDER AYRI</p>
+    </div>
+
+    <!-- section opens when map .is-active -->
+    <div class="sliding-map-section">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3013.3233333091694!2d29.124876851287386!3d40.95249513070231!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac6880b8786f5%3A0x1da8998bd491da0b!2s%C5%9Eehit%20%C4%B0lhan%20Varank%20High%20School%20of%20Science!5e0!3m2!1sen!2str!4v1664199525623!5m2!1sen!2str"
+                    width="90%" height="90%" style="border:0;" allowfullscreen="true" loading="lazy" margin="10vh"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
     </div>
 
     <!-- adds shadow to mainpage when sliding menu .is-active  -->

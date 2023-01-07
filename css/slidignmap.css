@@ -12,7 +12,6 @@
     border-radius: 15px;
     transition: 300ms;
     opacity: 0;
-    padding: 5vh;
 }
 .sliding-map-section p{
     font-family: unbounded;

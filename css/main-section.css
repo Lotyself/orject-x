@@ -64,13 +64,25 @@
     font-weight: 500;
     
 }
-img{
+.video{
+    display: flex;
     top: 0;
     left: 0;
     opacity: 1;
     z-index: 1;
-    position:absolute;
-    height: 102%;
+    position: absolute;
+    height: 102vh;
+    object-fit: cover;
+    width: 100%;
+    
+}
+.video img{
+    top: 0;
+    left: 0;
+    opacity: 1;
+    z-index: 1;
+    position: absolute;
+    height: 100%;
     object-fit: cover;
     width: 100%;
 }
